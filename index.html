@@ -106,6 +106,32 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
 .tier-pill.t1{background:#fdf0e6;color:var(--orange-dark);}
 .tier-pill.t2{background:#fff5ee;color:#c47a30;}
 .tier-pill.t3{background:#f5f5f5;color:#888;}
+
+@media(max-width:900px){
+  .hdr { padding:16px 20px; flex-wrap:wrap; gap:12px; }
+  .hdr-right { flex-wrap:wrap; gap:8px; }
+  .nav { padding:0 16px; height:auto; overflow-x:auto; }
+  .nav-tabs { gap:0; }
+  .screen { padding:20px 16px; }
+  .kpi-row { grid-template-columns:repeat(2,1fr); }
+  .cols4 { grid-template-columns:repeat(2,1fr); }
+  .tier-row { grid-template-columns:repeat(2,1fr); }
+  .chart-row.two { grid-template-columns:1fr; }
+  .chart-row.two-third { grid-template-columns:1fr; }
+  .insight-black { padding:24px 20px; }
+  .insight-black .headline { font-size:20px; }
+  .insight-cards { gap:12px; }
+  .insight-card { padding:16px; }
+  .hdr-div { display:none; }
+}
+
+@media(max-width:480px){
+  .kpi-row { grid-template-columns:1fr; }
+  .cols4 { grid-template-columns:1fr; }
+  .tier-row { grid-template-columns:1fr; }
+  .nav-tab { font-size:11px; padding:0 12px; }
+  .insight-black .headline { font-size:17px; }
+}
 </style>
 </head>
 <body>
@@ -149,8 +175,8 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
     <div class="kpi-card"><div class="kpi-label">Unidades ativas</div><div class="kpi-value">36</div><div class="kpi-sub">33 lojas · 1 CD · 4 estados</div></div>
     <div class="kpi-card"><div class="kpi-label">Coletas realizadas</div><div class="kpi-value">4.093</div><div class="kpi-sub">set/2025 – mai/2026</div></div>
     <div class="kpi-card"><div class="kpi-label">Taxa de sucesso</div><div class="kpi-value">95,5%</div><div class="kpi-sub">coletas realizadas vs planejadas</div></div>
-    <div class="kpi-card hi-blue"><div class="kpi-label">Volume coletado</div><div class="kpi-value">6.207<span style="font-family:'Inter',sans-serif;font-size:14px;color:var(--text);font-weight:400"> t</span></div><div class="kpi-sub">set/2025 – mai/2026</div></div>
-    <div class="kpi-card"><div class="kpi-label">Orgânico estimado</div><div class="kpi-value" style="color:var(--orange-dark)">1.653<span style="font-family:'Inter',sans-serif;font-size:14px;color:var(--text);font-weight:400"> t</span></div><div class="kpi-sub">25,6% estimado · benchmark base Musa</div></div>
+    <div class="kpi-card hi-blue"><div class="kpi-label">Volume coletado</div><div class="kpi-value">6.405<span style="font-family:'Inter',sans-serif;font-size:14px;color:var(--text);font-weight:400"> t</span></div><div class="kpi-sub">set/2025 – mai/2026</div></div>
+    <div class="kpi-card"><div class="kpi-label">Orgânico estimado</div><div class="kpi-value" style="color:var(--orange-dark)">1.677<span style="font-family:'Inter',sans-serif;font-size:14px;color:var(--text);font-weight:400"> t</span></div><div class="kpi-sub">25,6% estimado · benchmark base Musa</div></div>
   </div>
   <div class="sec-label">Distribuição da rede por volume médio mensal</div>
   <div class="tier-row">
@@ -254,16 +280,16 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
           <tr style="background:#eef1ff">
             <td style="padding:12px 16px;color:#5577dd;font-weight:500;font-style:italic">Orgânico (estimado)</td>
             <td style="padding:12px 16px"><span style="background:#eef1ff;color:#5577dd;padding:3px 12px;border-radius:20px;font-size:10px;font-weight:600">Benchmark base Musa</span></td>
-            <td style="padding:12px 16px;font-size:12px;color:#5577dd;font-style:italic">1.653</td>
+            <td style="padding:12px 16px;font-size:12px;color:#5577dd;font-style:italic">1.677</td>
             <td style="padding:12px 16px;font-size:12px">
-              <div style="display:flex;align-items:center;gap:8px"><span style="min-width:28px;color:#5577dd">25,6%</span><div style="flex:1;background:rgba(0,0,0,0.06);border-radius:3px;height:5px;overflow:hidden"><div style="width:25.6%;height:100%;background:#8AA5FF;border-radius:3px"></div></div></div>
+              <div style="display:flex;align-items:center;gap:8px"><span style="min-width:28px;color:#5577dd">26.2%</span><div style="flex:1;background:rgba(0,0,0,0.06);border-radius:3px;height:5px;overflow:hidden"><div style="width:26.2%;height:100%;background:#8AA5FF;border-radius:3px"></div></div></div>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
     <div style="font-size:10px;color:var(--text-light);margin-top:10px;line-height:1.6">
-      * Orgânico estimado: 29% do Não Reciclável das lojas (excluindo CD), com base em benchmark de redes similares na base Musa.
+      * Orgânico estimado: 29% do Não Reciclável das lojas (excluindo CD) = 1,677t, com base em benchmark de redes similares na base Musa.
     </div>
   </div>
   </div>
@@ -427,7 +453,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
   <div class="insight-black">
     <div class="tag">● O que 9 meses de dados revelam</div>
     <div class="headline">Resíduo é desperdício com endereço.<br>Agora o Dia a Dia sabe qual loja gera mais — e quando.</div>
-    <div class="body">Cada quilo de não reciclável coletado é, em boa parte, comida que não foi vendida. Com 6.207 toneladas rastreadas em 33 lojas, os dados revelam padrões que a operação do dia a dia não enxerga: onde o desperdício é maior, quando ele acontece e quais lojas fogem do padrão. O próximo passo é transformar rastreabilidade em ferramenta de gestão de perdas — e para isso, a Musa precisa de dados que só o Dia a Dia tem.</div>
+    <div class="body">Cada quilo de não reciclável coletado é, em boa parte, comida que não foi vendida. Com 6.405 toneladas rastreadas em 33 lojas, os dados revelam padrões que a operação do dia a dia não enxerga: onde o desperdício é maior, quando ele acontece e quais lojas fogem do padrão. O próximo passo é transformar rastreabilidade em ferramenta de gestão de perdas — e para isso, a Musa precisa de dados que só o Dia a Dia tem.</div>
   </div>
   <div class="sec-label orange">● O que os dados revelam</div>
   <div class="insight-cards">
@@ -448,7 +474,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
     <div class="insight-card">
       <div class="insight-num">03</div>
       <div>
-        <div class="insight-title">1.653 toneladas estimadas de orgânico invisível no Não Reciclável</div>
+        <div class="insight-title">1.677 toneladas estimadas de orgânico invisível no Não Reciclável</div>
         <div class="insight-body">Com base em benchmark de redes similares na base Musa, estimamos que 25,6% do volume total é orgânico — hoje misturado no Não Reciclável. Jardim Botânico e Águas Claras concentram o maior volume estimado. Com separação de FLV, essas lojas passariam de maiores geradoras de custo para maiores geradoras de valor.</div>
       </div>
     </div>
