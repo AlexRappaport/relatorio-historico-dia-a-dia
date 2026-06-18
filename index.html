@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dia a Dia · Relatório de Operação · Set/2025–Mai/2026</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzY0IiBoZWlnaHQ9IjM4MCIgdmlld0JveD0iMCAwIDM2NCAzODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTgxLjA4IDY5Ljk0QzUxLjIzIDEwMC4xNCAzMi44IDE0MS42NCAzMi44IDE4Ny40N0MzMi44IDIzMy4yOSA1MS4yMyAyNzQuNzkgODEuMDggMzA0Ljk5QzMzLjY5IDI4NyAwIDI0MS4xNyAwIDE4Ny40N0MwIDEzMy43NyAzMy42OSA4Ny45MyA4MS4wOCA2OS45NFoiIGZpbGw9IiMyMjIyMjIiLz48cGF0aCBkPSJNMzYxLjQ5IDE0OC4wMUMzNTAuOTkgMTA2Ljg3IDMyNC45IDY5LjcgMjg1LjYyIDQ2LjFDMjQ2LjM1IDIyLjUgMjAxLjI2IDE2LjkyIDE2MC4wMyAyNi45NUMxOTkuODQgLTQuNDIgMjU2LjQ5IC05LjcgMzAyLjUyIDE3Ljk3QzM0OC41NSA0NS42MiAzNzAuNDkgOTguMSAzNjEuNDkgMTQ4LjAxWiIgZmlsbD0iIzIyMjIyMiIvPjxwYXRoIGQ9Ik0zNjEuNDkgMjMxLjEzQzM1MC45OSAyNzIuMjcgMzI0LjkgMzA5LjQ1IDI4NS42MiAzMzMuMDVDMjQ2LjM1IDM1Ni42NSAyMDEuMjYgMzYyLjIyIDE2MC4wMyAzNTIuMkMxOTkuODQgMzgzLjU2IDI1Ni40OSAzODguODQgMzAyLjUyIDM2MS4xOEMzNDguNTUgMzMzLjUyIDM3MC40OSAyODEuMDQgMzYxLjQ5IDIzMS4xM1oiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" crossorigin="anonymous"></script>
+<style>
+:root{--bg:#F5F5F5;--card:#FFFFFF;--card-warm:#F9EDE4;--text:#222222;--text-mid:#666666;--text-light:#999999;--orange:#FFBA86;--orange-dark:#b35a00;--blue:#8AA5FF;--blue-light:#bacaff;--amber:#db9865;--radius:16px;--radius-sm:10px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+.hdr{background:#222222;color:#fff;padding:20px 40px;display:flex;align-items:center;justify-content:space-between;}
+.hdr-left{display:flex;align-items:center;gap:16px;}
+.hdr-title{font-family:'Libre Caslon Text',serif;font-size:17px;color:#fff;}
+.hdr-sub{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.hdr-right{display:flex;align-items:center;gap:16px;}
+.hdr-badge{font-size:11px;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.2);padding:5px 14px;border-radius:20px;}
+.hdr-div{width:1px;height:28px;background:rgba(255,255,255,0.2);}
+.nav{background:var(--card);border-bottom:1px solid rgba(0,0,0,0.08);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:48px;position:sticky;top:0;z-index:100;}
+.nav-tabs{display:flex;}
+.nav-tab{font-size:13px;font-weight:500;color:var(--text-light);cursor:pointer;padding:0 20px;height:48px;border-bottom:2px solid transparent;border-top:none;border-left:none;border-right:none;transition:color .15s,border-color .15s;white-space:nowrap;background:none;font-family:'Inter',sans-serif;}
+.nav-tab:hover{color:var(--text);}
+.nav-tab.active{color:var(--text);border-bottom-color:var(--orange-dark);font-weight:600;}
+.nav-meta{font-size:12px;color:var(--text-light);white-space:nowrap;}
+.screen{display:none;padding:40px;max-width:1200px;margin:0 auto;}
+.screen.active{display:block;}
+.screen-header{margin-bottom:28px;}
+.screen-header h1{font-family:'Libre Caslon Text',serif;font-size:24px;margin-bottom:4px;}
+.screen-header p{font-size:13px;color:var(--text-mid);}
+.kpi-row{display:grid;gap:12px;margin-bottom:28px;}
+.kpi-row.cols5{grid-template-columns:repeat(5,1fr);}
+.kpi-row.cols4{grid-template-columns:repeat(4,1fr);}
+.kpi-row.cols3{grid-template-columns:repeat(3,1fr);}
+.kpi-card{background:var(--card);border-radius:var(--radius);padding:20px 22px;border:1px solid rgba(0,0,0,0.06);transition:box-shadow .15s,transform .15s;cursor:default;}
+.kpi-card:hover{box-shadow:0 4px 14px rgba(0,0,0,0.08);transform:translateY(-1px);}
+.kpi-label{font-size:11px;font-weight:500;color:var(--text-mid);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
+.kpi-value{font-family:'Libre Caslon Text',serif;font-size:28px;line-height:1;color:var(--text);}
+.kpi-sub{font-size:12px;color:var(--text-light);margin-top:4px;line-height:1.4;}
+.kpi-card.hi-orange .kpi-value{color:var(--orange-dark);}
+.kpi-card.hi-blue .kpi-value{color:#5577dd;}
+.tier-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:28px;}
+.tier-card{background:var(--card);border-radius:var(--radius);padding:20px 22px;border:1px solid rgba(0,0,0,0.06);position:relative;overflow:hidden;transition:box-shadow .15s,transform .15s;cursor:default;}
+.tier-card:hover{box-shadow:0 4px 14px rgba(0,0,0,0.08);transform:translateY(-1px);}
+.tier-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
+.tier-card.t1::before{background:var(--orange-dark);}
+.tier-card.t2::before{background:var(--orange);}
+.tier-card.t3::before{background:#ddd;}
+.tier-card.cd::before{background:var(--blue);}
+.tier-badge{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;margin-bottom:10px;}
+.t1 .tier-badge{background:#fdf0e6;color:var(--orange-dark);}
+.t2 .tier-badge{background:#fff5ee;color:#c47a30;}
+.t3 .tier-badge{background:#f5f5f5;color:#888;}
+.cd .tier-badge{background:#e8eeff;color:#4466cc;}
+.tier-range{font-size:12px;color:var(--text-mid);margin-bottom:8px;}
+.tier-count{font-family:'Libre Caslon Text',serif;font-size:24px;color:var(--text);line-height:1;margin-bottom:6px;}
+.tier-breakdown{font-size:12px;color:var(--text-light);line-height:1.6;}
+.chart-row{display:grid;gap:16px;margin-bottom:20px;}
+.chart-row.one{grid-template-columns:1fr;}
+.chart-row.two{grid-template-columns:1fr 1fr;}
+.chart-row.two-third{grid-template-columns:2fr 1fr;}
+.chart-card{background:var(--card);border-radius:var(--radius);padding:24px;border:1px solid rgba(0,0,0,0.06);transition:box-shadow .15s,transform .15s;cursor:default;}
+.chart-card:hover{box-shadow:0 4px 14px rgba(0,0,0,0.08);transform:translateY(-1px);}
+.chart-title{font-family:'Libre Caslon Text',serif;font-size:17px;margin-bottom:4px;}
+.chart-insight{font-size:12px;color:var(--text-mid);line-height:1.5;margin-bottom:16px;}
+.chart-inner{background:var(--card-warm);border-radius:var(--radius-sm);padding:20px;}
+.sec-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-light);margin-bottom:12px;margin-top:4px;}
+.sec-label.orange{color:var(--orange-dark);}
+.data-table{width:100%;border-collapse:collapse;font-size:12px;}
+.data-table th{text-align:left;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-light);padding:6px 10px;border-bottom:1px solid rgba(0,0,0,0.08);white-space:nowrap;}
+.data-table td{padding:9px 10px;border-bottom:1px solid rgba(0,0,0,0.04);vertical-align:middle;}
+.data-table tbody tr:last-child td{border-bottom:none;}
+.data-table tbody tr:hover td{background:rgba(0,0,0,0.02);}
+.badge{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;}
+.badge-t1{background:#fdf0e6;color:var(--orange-dark);}
+.badge-t2{background:#fff5ee;color:#c47a30;}
+.badge-t3{background:#f5f5f5;color:#888;}
+.badge-df{background:#e8eeff;color:#4466cc;}
+.badge-go{background:#e8f4e8;color:#2d6a2d;}
+.badge-ba{background:#fff0e6;color:var(--orange-dark);}
+.badge-to{background:#f5f0e8;color:#8a5a20;}
+.rank-bar-wrap{background:rgba(0,0,0,0.06);border-radius:3px;height:6px;flex:1;overflow:hidden;}
+.rank-bar-fill{height:100%;border-radius:3px;}
+.dow-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;align-items:end;}
+.dow-col{display:flex;flex-direction:column;align-items:center;gap:6px;}
+.dow-bar-wrap{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100px;}
+.dow-bar{width:100%;border-radius:5px 5px 0 0;}
+.dow-label{font-size:11px;font-weight:500;color:var(--text-mid);}
+.dow-val{font-family:'Libre Caslon Text',serif;font-size:13px;color:var(--text);}
+.insight-black{background:#222;border-radius:var(--radius);padding:40px 48px;margin-bottom:32px;transition:transform .15s,box-shadow .15s;cursor:default;}
+.insight-black:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.25);}
+.insight-black .tag{font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--orange);text-transform:uppercase;margin-bottom:20px;}
+.insight-black .headline{font-family:'Libre Caslon Text',serif;font-size:26px;line-height:1.35;color:#fff;margin-bottom:14px;}
+.insight-black .body{font-size:14px;line-height:1.7;color:rgba(255,255,255,0.6);max-width:700px;}
+.insight-cards{display:flex;flex-direction:column;gap:12px;margin-bottom:32px;}
+.insight-card{background:var(--card);border-radius:var(--radius);padding:20px 24px;border:1px solid rgba(0,0,0,0.06);display:flex;gap:20px;align-items:flex-start;transition:box-shadow .15s,transform .15s;cursor:default;}
+.insight-card:hover{box-shadow:0 4px 14px rgba(0,0,0,0.08);transform:translateY(-1px);}
+.insight-num{font-size:12px;font-weight:600;color:var(--orange-dark);flex-shrink:0;padding-top:3px;width:20px;}
+.insight-title{font-family:'Libre Caslon Text',serif;font-size:15px;line-height:1.35;margin-bottom:6px;}
+.insight-body{font-size:12px;line-height:1.65;color:var(--text-mid);}
+.uf-pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;background:#f0f0f0;color:#555;}
+.tier-pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;}
+.tier-pill.t1{background:#fdf0e6;color:var(--orange-dark);}
+.tier-pill.t2{background:#fff5ee;color:#c47a30;}
+.tier-pill.t3{background:#f5f5f5;color:#888;}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div class="hdr-left">
+    <svg width="36" height="38" viewBox="0 0 364 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M81.08 69.94C51.23 100.14 32.8 141.64 32.8 187.47C32.8 233.29 51.23 274.79 81.08 304.99C33.69 287 0 241.17 0 187.47C0 133.77 33.69 87.93 81.08 69.94Z" fill="white" fill-opacity="0.9"/>
+      <path d="M361.49 148.01C350.99 106.87 324.9 69.7 285.62 46.1C246.35 22.5 201.26 16.92 160.03 26.95C199.84 -4.42 256.49 -9.7 302.52 17.97C348.55 45.62 370.49 98.1 361.49 148.01Z" fill="white" fill-opacity="0.9"/>
+      <path d="M361.49 231.13C350.99 272.27 324.9 309.45 285.62 333.05C246.35 356.65 201.26 362.22 160.03 352.2C199.84 383.56 256.49 388.84 302.52 361.18C348.55 333.52 370.49 281.04 361.49 231.13Z" fill="white" fill-opacity="0.9"/>
+    </svg>
+    <div>
+      <div class="hdr-title">Dia a Dia · Gestão de Resíduos</div>
+      <div class="hdr-sub">Relatório de Operação · Musa</div>
+    </div>
+  </div>
+  <div class="hdr-right">
+    <div class="hdr-badge">Set/2025 – Mai/2026</div>
+    <div class="hdr-div"></div>
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMjQwLjAwMDAwMHB0IiBoZWlnaHQ9IjI0MC4wMDAwMDBwdCIgdmlld0JveD0iMCAwIDI0MC4wMDAwMDAgMjQwLjAwMDAwMCIKIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPgoKPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsMjQwLjAwMDAwMCkgc2NhbGUoMC4xMDAwMDAsLTAuMTAwMDAwKSIKZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSJub25lIj4KPHBhdGggZD0iTTk0NiAxNTQ0IGMtMTEgLTEwIC0xNCAtMjQgLTEwIC00MiAyOCAtMTE1IDQ0IC0xNjYgNTYgLTE3MyAxOCAtMTIKMzA1IC0xMSAzMjcgMCAxMSA3IDI2IDQyIDQyIDEwNiAzMiAxMzAgNDEgMTI1IC0yMDcgMTI1IC0xNjIgMCAtMTk1IC0zIC0yMDgKLTE2eiBtMjA0IC01MiBjMjcgLTIyIDI5IC02NSA1IC05MiAtMTMgLTE0IC0zMSAtMjAgLTYyIC0yMCBsLTQzIDAgMCA2NSAwIDY1CjM5IDAgYzIzIDAgNDggLTggNjEgLTE4eiBtMTQwIC0yIGM0NSAtNDUgMTAgLTExMCAtNjAgLTExMCBsLTQwIDAgMCA2NSAwIDY1CjQwIDAgYzI3IDAgNDcgLTcgNjAgLTIweiBtLTI2MCAtMjAgYzAgLTUgLTQgLTEwIC0xMCAtMTAgLTUgMCAtMTAgNSAtMTAgMTAgMAo2IDUgMTAgMTAgMTAgNiAwIDEwIC00IDEwIC0xMHogbTAgLTU3IGMwIC01IC01IC0xNSAtMTAgLTIzIC04IC0xMiAtMTAgLTExCi0xMCA4IDAgMTIgNSAyMiAxMCAyMiA2IDAgMTAgLTMgMTAgLTd6Ii8+CjxwYXRoIGQ9Ik0xMTAwIDE0NDYgYzAgLTE3IDUgLTI2IDE2IC0yNiAxMCAwIDE0IDcgMTIgMjIgLTUgMzIgLTI4IDM1IC0yOCA0eiIvPgo8cGF0aCBkPSJNMTIzMCAxNDQ1IGMwIC0yMCA0IC0yNiAxOCAtMjMgOSAyIDE3IDEyIDE3IDIzIDAgMTEgLTggMjEgLTE3IDIzCi0xNCAzIC0xOCAtMyAtMTggLTIzeiIvPgo8cGF0aCBkPSJNMTcwIDEwNTUgbDAgLTE3NyAxMDggMyBjMTE3IDUgMTU2IDE5IDE5NiA3MiAzMSA0MiAzMCAxNTkgLTEgMjAzCi0zNyA1MSAtODQgNjggLTIwMCA3MiBsLTEwMyA0IDAgLTE3N3ogbTIwMCA1NSBjMjQgLTI0IDI2IC03NyA0IC0xMDggLTExIC0xNgotMjUgLTIyIC01NSAtMjIgbC0zOSAwIDAgNzUgMCA3NSAzNSAwIGMyMiAwIDQzIC04IDU1IC0yMHoiLz4KPHBhdGggZD0iTTU0MCAxMDU1IGwwIC0xNzUgNDQgMCBjNzkgMCA3NiAtNyA3NiAxNjkgMCAxMDkgLTQgMTYxIC0xMiAxNjkgLTcKNyAtMzQgMTIgLTYwIDEyIGwtNDggMCAwIC0xNzV6Ii8+CjxwYXRoIGQ9Ik03NDMgMTA1NSBsLTU5IC0xNzUgNTcgMCBjNTIgMCA1NyAyIDYzIDI1IDYgMjIgMTIgMjUgNTEgMjUgMzkgMCA0NwotMyA1NSAtMjUgOCAtMjIgMTYgLTI1IDU1IC0yNSAzMSAwIDQ3IDUgNTEgMTQgNSAxNCAtNzYgMjc4IC05NyAzMTkgLTcgMTMKLTIyIDE3IC02MyAxNyBsLTU0IDAgLTU5IC0xNzV6IG0xMzEgLTcgYzUgLTI0IDMgLTI4IC0xNSAtMjggLTE5IDAgLTIxIDQgLTE1CjMxIDMgMTcgNiA0MSA3IDUzIDEgMTkgMiAxOCA4IC00IDQgLTE0IDExIC0zNyAxNSAtNTJ6Ii8+CjxwYXRoIGQ9Ik0xMzYwIDEwNTUgbDAgLTE3NSA5OCAwIGM4MiAwIDEwNSA0IDE0MiAyMyAxMDcgNTQgMTMwIDE5MyA0NCAyNzQKLTQ0IDQxIC04OCA1MyAtMTk2IDUzIGwtODggMCAwIC0xNzV6IG0xOTggNTkgYzE3IC0xMSAyMiAtMjUgMjIgLTU2IDAgLTU0Ci0yMiAtNzggLTcyIC03OCBsLTM4IDAgMCA3NSAwIDc1IDMzIDAgYzE4IDAgNDMgLTcgNTUgLTE2eiIvPgo8cGF0aCBkPSJNMTczMCAxMDU1IGwwIC0xNzUgNTUgMCBjNzQgMCA3NyA3IDczIDE4NiAtMyAxNjQgLTMgMTY0IC04MCAxNjQKbC00OCAwIDAgLTE3NXoiLz4KPHBhdGggZD0iTTE5NDEgMTA2OCBjLTMwIC05MCAtNTYgLTE2OSAtNTkgLTE3NSAtMyAtMTAgMTEgLTEzIDUyIC0xMyA1MSAwIDU2CjIgNjIgMjUgNSAyMiAxMiAyNSA1MCAyNSAzOCAwIDQ2IC00IDU2IC0yNSAxMCAtMjIgMTggLTI1IDYwIC0yNSA0MyAwIDQ4IDIKNDggMjIgMCAyNyAtODggMjk3IC0xMDMgMzE2IC01IDcgLTMyIDEyIC02MSAxMiBsLTUxIDAgLTU0IC0xNjJ6IG0xMjMgLTIwIGM2Ci0zMyA1IC0zNiAtMTQgLTMxIC0xMyA0IC0xOSAxMSAtMTYgMjAgMyA4IDYgMjYgNiA0MSAwIDM2IDE2IDE2IDI0IC0zMHoiLz4KPHBhdGggZD0iTTExMzEgMTA2OCBjLTEzIC00MCAtMjYgLTc5IC0yOCAtODUgLTQgLTkgNSAtMTMgMjYgLTEzIDE3IDAgMzEgNQozMSAxMCAwIDYgMTEgMTAgMjUgMTAgMTQgMCAyNSAtNCAyNSAtMTAgMCAtNSAxMSAtMTAgMjUgLTEwIDMxIDAgMzEgOCAyIDk2Ci0yMiA2MyAtMjYgNjkgLTUzIDcyIC0yOSAzIC0zMSAwIC01MyAtNzB6IG01OSAtOSBjMCAtMTYgLTQgLTI4IC05IC0yNSAtOCA1Ci0zIDU2IDUgNTYgMiAwIDQgLTE0IDQgLTMxeiIvPgo8L2c+Cjwvc3ZnPgo=" style="height:72px;display:block;filter:brightness(0) invert(1);opacity:0.85">
+  </div>
+</div>
+
+<div class="nav">
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="showTab('geral',this)">Visão Geral</button>
+    <button class="nav-tab" onclick="showTab('geo',this)">Padrões Geográficos</button>
+    <button class="nav-tab" onclick="showTab('temporal',this)">Padrões Temporais</button>
+    <button class="nav-tab" onclick="showTab('insights',this)">Insights</button>
+  </div>
+  <span class="nav-meta">Set/2025 – Mai/2026 · 33 lojas · 1 CD</span>
+</div>
+
+<!-- ABA 1 VISAO GERAL -->
+<div id="screen-geral" class="screen active">
+  <div class="screen-header">
+    <h1>Visão Geral</h1>
+    <p>Resumo da operação · Set/2025 – Mai/2026 · 33 lojas + 1 CD</p>
+  </div>
+  <div class="kpi-row cols5">
+    <div class="kpi-card"><div class="kpi-label">Unidades ativas</div><div class="kpi-value">36</div><div class="kpi-sub">33 lojas · 1 CD · 4 estados</div></div>
+    <div class="kpi-card"><div class="kpi-label">Coletas realizadas</div><div class="kpi-value">4.093</div><div class="kpi-sub">set/2025 – mai/2026</div></div>
+    <div class="kpi-card"><div class="kpi-label">Taxa de sucesso</div><div class="kpi-value">95,5%</div><div class="kpi-sub">coletas realizadas vs planejadas</div></div>
+    <div class="kpi-card hi-blue"><div class="kpi-label">Volume coletado</div><div class="kpi-value">6.207<span style="font-family:'Inter',sans-serif;font-size:14px;color:var(--text);font-weight:400"> t</span></div><div class="kpi-sub">set/2025 – mai/2026</div></div>
+    <div class="kpi-card"><div class="kpi-label">Orgânico estimado</div><div class="kpi-value" style="color:var(--orange-dark)">1.653<span style="font-family:'Inter',sans-serif;font-size:14px;color:var(--text);font-weight:400"> t</span></div><div class="kpi-sub">25,6% estimado · benchmark base Musa</div></div>
+  </div>
+  <div class="sec-label">Distribuição da rede por volume médio mensal</div>
+  <div class="tier-row">
+    <div class="tier-card cd">
+      <div class="tier-badge">CD · Centro de Distribuição</div>
+      <div class="tier-range">operação distinta</div>
+      <div class="tier-count">1 CD</div>
+      <div class="tier-breakdown">437 ton no período · DF</div>
+    </div>
+    <div class="tier-card t1">
+      <div class="tier-badge">T1 · Alto volume</div>
+      <div class="tier-range">&gt; 27,5 ton/mês</div>
+      <div class="tier-count">11 lojas</div>
+      <div class="tier-breakdown">média 40 t/mês · DF e GO</div>
+    </div>
+    <div class="tier-card t2">
+      <div class="tier-badge">T2 · Volume médio</div>
+      <div class="tier-range">14,4 – 27,5 ton/mês</div>
+      <div class="tier-count">11 lojas</div>
+      <div class="tier-breakdown">média 21 t/mês · DF, GO e BA</div>
+    </div>
+    <div class="tier-card t3">
+      <div class="tier-badge">T3 · Baixo volume</div>
+      <div class="tier-range">&lt; 14,4 ton/mês</div>
+      <div class="tier-count">11 lojas</div>
+      <div class="tier-breakdown">média 5 t/mês · DF, GO e TO</div>
+    </div>
+  </div>
+  <div class="chart-row one">
+    <div class="chart-card">
+      <div class="chart-title">Evolução de volume e unidades ativas</div>
+      <div class="chart-insight">Peso coletado por mês nas lojas (barras) e unidades ativas na rede (linha) · set/2025 – mai/2026</div>
+      <div class="chart-inner" style="height:280px;position:relative"><canvas id="c_ev_dual"></canvas></div>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;font-size:12px;color:var(--text-mid)">
+        <span><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#FFBA86;vertical-align:middle;margin-right:5px"></span>Volume (ton)</span>
+        <span><span style="display:inline-block;width:18px;height:0;border-top:2px solid #5577dd;vertical-align:middle;margin-right:5px"></span>Unidades ativas</span>
+      </div>
+    </div>
+  </div>
+  <div class="chart-row one">
+  <div class="chart-card" style="margin-top:0">
+    <div class="chart-title">Composição do volume por resíduo e destinação</div>
+    <div class="chart-insight">95% do volume é Não Reciclável — destinado a aterro sanitário. Rejeito e Madeira/RCC têm destinação nobre via coprocessamento e compostagem.</div>
+    <div style="overflow:hidden;border-radius:var(--radius-sm);border:1px solid rgba(0,0,0,0.06);margin-top:16px">
+      <table class="data-table" style="width:100%;border-collapse:collapse;font-size:13px">
+        <thead>
+          <tr>
+            <th style="font-size:10px;font-weight:600;color:#999;text-transform:uppercase;letter-spacing:.06em;text-align:left;padding:12px 16px;background:var(--card-warm);border-bottom:1px solid rgba(0,0,0,0.08)">Resíduo</th>
+            <th style="font-size:10px;font-weight:600;color:#999;text-transform:uppercase;letter-spacing:.06em;text-align:left;padding:12px 16px;background:var(--card-warm);border-bottom:1px solid rgba(0,0,0,0.08);min-width:160px">Destinação</th>
+            <th style="font-size:10px;font-weight:600;color:#999;text-transform:uppercase;letter-spacing:.06em;text-align:left;padding:12px 16px;background:var(--card-warm);border-bottom:1px solid rgba(0,0,0,0.08)">Vol. coletado (t)</th>
+            <th style="font-size:10px;font-weight:600;color:#999;text-transform:uppercase;letter-spacing:.06em;text-align:left;padding:12px 16px;background:var(--card-warm);border-bottom:1px solid rgba(0,0,0,0.08)">% do total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);color:#222;font-weight:500">Não Reciclável</td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06)"><span style="background:#f5f5f5;color:#888;padding:3px 12px;border-radius:20px;font-size:10px;font-weight:600">Aterro Sanitário</span></td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);font-size:12px">6.086</td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);font-size:12px">
+              <div style="display:flex;align-items:center;gap:8px"><span style="min-width:28px">95%</span><div style="flex:1;background:rgba(0,0,0,0.06);border-radius:3px;height:5px;overflow:hidden"><div style="width:95%;height:100%;background:#FFBA86;border-radius:3px"></div></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);color:#222;font-weight:500">Rejeito</td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06)"><span style="background:#fff5ee;color:#c47a30;padding:3px 12px;border-radius:20px;font-size:10px;font-weight:600;white-space:nowrap">Coprocessamento</span></td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);font-size:12px">154</td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);font-size:12px">
+              <div style="display:flex;align-items:center;gap:8px"><span style="min-width:28px">2%</span><div style="flex:1;background:rgba(0,0,0,0.06);border-radius:3px;height:5px;overflow:hidden"><div style="width:17%;height:100%;background:#FFBA86;border-radius:3px"></div></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);color:#222;font-weight:500">Madeira / RCC</td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06)"><span style="background:#e8eeff;color:#5577dd;padding:3px 12px;border-radius:20px;font-size:10px;font-weight:600">Compostagem</span></td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);font-size:12px">107</td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);font-size:12px">
+              <div style="display:flex;align-items:center;gap:8px"><span style="min-width:28px">2%</span><div style="flex:1;background:rgba(0,0,0,0.06);border-radius:3px;height:5px;overflow:hidden"><div style="width:12%;height:100%;background:#8AA5FF;border-radius:3px"></div></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);color:#222;font-weight:500">Orgânico</td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06)"><span style="background:#e8eeff;color:#5577dd;padding:3px 12px;border-radius:20px;font-size:10px;font-weight:600">Compostagem</span></td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);font-size:12px">57</td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);font-size:12px">
+              <div style="display:flex;align-items:center;gap:8px"><span style="min-width:28px">1%</span><div style="flex:1;background:rgba(0,0,0,0.06);border-radius:3px;height:5px;overflow:hidden"><div style="width:6%;height:100%;background:#bacaff;border-radius:3px"></div></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);color:#222;font-weight:500">Vidro</td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06)"><span style="background:#f5f5f5;color:#888;padding:3px 12px;border-radius:20px;font-size:10px;font-weight:600">Reciclagem</span></td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);font-size:12px">0,3</td>
+            <td style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.06);font-size:12px">
+              <div style="display:flex;align-items:center;gap:8px"><span style="min-width:28px">&lt;1%</span><div style="flex:1;background:rgba(0,0,0,0.06);border-radius:3px;height:5px;overflow:hidden"><div style="width:1%;height:100%;background:#c6c6c6;border-radius:3px"></div></div></div>
+            </td>
+          </tr>
+          <tr style="font-weight:600;background:rgba(0,0,0,0.03)">
+            <td style="padding:12px 16px;color:#222">Total</td>
+            <td style="padding:12px 16px"></td>
+            <td style="padding:12px 16px;font-size:12px">6.405</td>
+            <td style="padding:12px 16px;font-size:12px">100%</td>
+          </tr>
+          <tr style="background:#eef1ff">
+            <td style="padding:12px 16px;color:#5577dd;font-weight:500;font-style:italic">Orgânico (estimado)</td>
+            <td style="padding:12px 16px"><span style="background:#eef1ff;color:#5577dd;padding:3px 12px;border-radius:20px;font-size:10px;font-weight:600">Benchmark base Musa</span></td>
+            <td style="padding:12px 16px;font-size:12px;color:#5577dd;font-style:italic">1.653</td>
+            <td style="padding:12px 16px;font-size:12px">
+              <div style="display:flex;align-items:center;gap:8px"><span style="min-width:28px;color:#5577dd">25,6%</span><div style="flex:1;background:rgba(0,0,0,0.06);border-radius:3px;height:5px;overflow:hidden"><div style="width:25.6%;height:100%;background:#8AA5FF;border-radius:3px"></div></div></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="font-size:10px;color:var(--text-light);margin-top:10px;line-height:1.6">
+      * Orgânico estimado: 29% do Não Reciclável das lojas (excluindo CD), com base em benchmark de redes similares na base Musa.
+    </div>
+  </div>
+  </div>
+
+  <div class="chart-row two">
+    <div class="chart-card">
+      <div style="margin-bottom:12px">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px">
+          <span style="font-family:'Libre Caslon Text',serif;font-size:17px">Top 10 lojas</span>
+          <span style="font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;background:#fdf0e6;color:#b35a00">maior volume médio</span>
+        </div>
+        <div class="chart-insight" style="margin-bottom:0">Jardim Botânico e Águas Claras lideram com folga — geração alta e operação consistente ao longo dos 9 meses.</div>
+      </div>
+      <div id="top10-table"></div>
+    </div>
+    <div class="chart-card">
+      <div style="margin-bottom:12px">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px">
+          <span style="font-family:'Libre Caslon Text',serif;font-size:17px">Bottom 10 lojas</span>
+          <span style="font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;background:#f0f0f0;color:#888">menor volume médio</span>
+        </div>
+        <div class="chart-insight" style="margin-bottom:0">Unidades recém-ativadas em GO dominam o bottom — 1 mês de dados não é suficiente para benchmark definitivo.</div>
+      </div>
+      <div id="bottom10-table"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABA 2 PADROES GEOGRAFICOS -->
+<div id="screen-geo" class="screen">
+  <div class="screen-header">
+    <h1>Padrões Geográficos</h1>
+    <p>Distribuição de volume, tiers e variabilidade por loja e região · set/2025 – mai/2026</p>
+  </div>
+  <div class="kpi-row cols4">
+    <div class="kpi-card"><div class="kpi-label">Estados com operação</div><div class="kpi-value">4</div><div class="kpi-sub">DF · GO · BA · TO</div></div>
+    <div class="kpi-card hi-orange"><div class="kpi-label">Concentração DF</div><div class="kpi-value">87%</div><div class="kpi-sub">do volume total da rede</div></div>
+    <div class="kpi-card"><div class="kpi-label">Transportadores</div><div class="kpi-value">4</div><div class="kpi-sub">operadores de transporte ativos</div></div>
+    <div class="kpi-card hi-blue"><div class="kpi-label">Receptores</div><div class="kpi-value">6</div><div class="kpi-sub">destinos de resíduo ativos</div></div>
+  </div>
+  <!-- BLOCO 2: DISTRIBUIÇÃO POR ESTADO -->
+  <div class="chart-row one">
+    <div class="chart-card">
+      <div class="chart-title">Volume por estado</div>
+      <div class="chart-insight">GO tem quase metade das lojas do DF — mas gera 13x menos volume. Parte disso é maturidade: muitas unidades de GO entraram em 2026 e ainda não têm histórico completo. A média por loja será o termômetro real quando a operação amadurecer.</div>
+      <div style="background:var(--card-warm);border-radius:var(--radius-sm);padding:24px 28px;margin-top:16px" id="estado-bars-new"></div>
+    </div>
+  </div>
+
+  <div class="chart-row one">
+    <div class="chart-card">
+      <div class="chart-title">Evolução mensal de volume por estado</div>
+      <div class="chart-insight">DF lidera e estabiliza a partir de dez/25. GO está em fase de rampa — novas lojas entrando ao longo de 2026 puxam o volume gradualmente para cima. BA e TO operam de forma estável desde a ativação.</div>
+      <div class="chart-inner" style="height:280px;position:relative;margin-top:16px"><canvas id="c_vol_estado"></canvas></div>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;font-size:12px;color:var(--text-mid)">
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#b35a00;border-radius:2px"></span>DF</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#8AA5FF;border-radius:2px"></span>GO</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#FFBA86;border-radius:2px"></span>BA</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#bacaff;border-radius:2px"></span>TO</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BLOCO 3: APROFUNDAMENTO DF -->
+  <div class="chart-row one">
+    <div class="chart-card">
+      <div class="chart-title">Dentro do DF — volume por Região Administrativa</div>
+      <div class="chart-insight">Lago Sul tem 1 loja e gera mais que Vicente Pires com 3. Isso não é coincidência — é perfil de consumo. Uma loja em região de alto poder aquisitivo pode gerar o dobro de resíduo de uma loja em região periférica do mesmo porte. Sem dados de área ou faturamento, esse gap é a próxima pergunta a responder.</div>
+      <div style="background:var(--card-warm);border-radius:var(--radius-sm);padding:24px 28px;margin-top:16px" id="ra-bars"></div>
+    </div>
+  </div>
+
+
+
+  <!-- BLOCO: TIERS POR ESTADO -->
+  <div class="chart-row one">
+    <div class="chart-card">
+      <div class="chart-title">Dentro de GO — volume por cidade</div>
+      <div class="chart-insight">Águas Lindas concentra 47% do volume de GO com apenas 1 loja — é a unidade mais madura do estado. Goiânia tem 3 lojas mas gera apenas 6% do volume: todas recém-ativadas, com menos de 3 meses de operação.</div>
+      <div style="background:var(--card-warm);border-radius:var(--radius-sm);padding:24px 28px;margin-top:16px" id="go-cidade-bars"></div>
+    </div>
+  </div>
+
+
+
+
+  <!-- BLOCO: ORGANICO ESTIMADO TOP 5 -->
+  <div class="chart-row one">
+    <div class="chart-card">
+      <div class="chart-title">Orgânico estimado por mês — Top 5 lojas</div>
+      <div class="chart-insight">Jardim Botânico e Águas Claras concentram o maior potencial de desperdício de FLV — juntas estimam mais de 40t por mês de orgânico oculto no Não Reciclável. São as lojas onde começar: separar, medir e reduzir o descarte de FLV teria o maior retorno sobre o investimento em gestão de perdas e redução de custo com resíduos.</div>
+      <div class="chart-inner" style="height:320px;position:relative;margin-top:16px"><canvas id="c_org_top5"></canvas></div>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;font-size:12px;color:var(--text-mid)">
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#b35a00;border-radius:2px"></span>Jardim Botânico</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#FFBA86;border-radius:2px"></span>Águas Claras</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#8AA5FF;border-radius:2px"></span>Sobradinho</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#5577dd;border-radius:2px"></span>CEI Centro</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#bacaff;border-radius:2px"></span>SIA</span>
+        <span style="font-size:11px;color:var(--text-light)">· valores estimados · 29% do NR · benchmark base Musa</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ABA 3 PADROES TEMPORAIS -->
+<div id="screen-temporal" class="screen">
+  <div class="screen-header">
+    <h1>Padrões Temporais</h1>
+    <p>Sazonalidade, dia da semana e ciclo mensal · set/2025 – mai/2026</p>
+  </div>
+  <div class="kpi-row cols4">
+    <div class="kpi-card hi-orange"><div class="kpi-label">Crescimento</div><div class="kpi-value">+581%</div><div class="kpi-sub">set/25 → jan/26 em volume</div></div>
+    <div class="kpi-card"><div class="kpi-label">Pico semanal</div><div class="kpi-value">1.162 t</div><div class="kpi-sub">Segunda-feira · maior dia da semana</div></div>
+    <div class="kpi-card hi-orange"><div class="kpi-label">Mês mais pesado</div><div class="kpi-value">924 t</div><div class="kpi-sub">Jan/26 · 26 unidades ativas</div></div>
+    <div class="kpi-card"><div class="kpi-label">Média mensal</div><div class="kpi-value">638 t</div><div class="kpi-sub">out/25–mai/26 · excl. rampagem</div></div>
+  </div>
+  <div class="chart-row one">
+    <div class="chart-card">
+      <div class="chart-title">Evolução mensal — Lojas vs CD Polo JK</div>
+      <div class="chart-insight">CD e lojas oscilam no mesmo ritmo na maior parte do período — quando um sobe, o outro também sobe, sugerindo uma causa comum ligada ao fluxo operacional da rede. A exceção é mai/26: as lojas mantêm volume, o CD cai. Entender o que foi diferente no CD em maio é a pergunta certa — pode revelar uma alavanca de controle que as lojas ainda não têm.</div>
+      <div class="chart-inner" style="height:280px;position:relative;margin-top:16px"><canvas id="c_lojas_cd"></canvas></div>
+      <div style="display:flex;flex-wrap:wrap;gap:20px;margin-top:14px;font-size:12px;color:var(--text-mid)">
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#b35a00;border-radius:2px"></span>Lojas · NR total</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#8AA5FF;border-radius:2px"></span>CD Polo JK</span>
+        <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:16px;height:0;border-top:2px dashed #FFBA86;vertical-align:middle"></span>Orgânico estimado · 29% do NR</span>
+      </div>
+    </div>
+  </div>
+  <div class="chart-row one">
+    <div class="chart-card">
+      <div class="chart-title">Volume por dia da semana</div>
+      <div class="chart-insight">Segunda lidera em volume e em peso médio por coleta — não porque tem mais coletas, mas porque cada coleta é mais pesada. O acúmulo do fim de semana chega ao caminhão mais cheio. Sábado inverte: muitas coletas, mas cada uma mais leve. Isso sugere que o peso por coleta é determinado pelo tempo de acúmulo entre coletas — não pela frequência.</div>
+      <div style="background:var(--card-warm);border-radius:var(--radius-sm);padding:32px 28px;margin-top:16px" id="dow-bars-new"></div>
+    </div>
+  </div>
+  <div class="chart-row one">
+    <div class="chart-card">
+      <div class="chart-title">Volume por semana do mês</div>
+      <div class="chart-insight">O meio do mês concentra o pico de geração — semana 2 lidera na maioria dos meses. Início e fim de mês são consistentemente mais leves. Para um atacarejo, isso pode refletir o ciclo de reposição: mercadoria entra no começo do mês, é processada e descartada no meio. Se isso se confirmar, é possível antecipar os picos de coleta e otimizar a frequência — mais coletas no meio do mês, menos nas pontas.</div>
+      <div style="margin-top:16px;overflow-x:auto" id="heatmap-sem"></div>
+    </div>
+  </div>
+  <div class="chart-row one">
+    <div class="chart-card">
+      <div class="chart-title">Consistência operacional por loja</div>
+      <div class="chart-insight">Lojas com alta variação e muitos meses de dados são o sinal mais importante aqui. CEI Centro e Ceilândia Sul têm 8 meses de operação e ainda variam acima de 70% — o que descarta rampagem como explicação. O que muda nesses meses? Promoções, mix de perecíveis, volume de fornecedores? Cruzar esse padrão com dados operacionais da loja é o próximo passo.</div>
+      <div style="margin-top:16px" id="cv-chart"></div>
+    </div>
+  </div>
+
+
+</div>
+
+<!-- ABA 4 INSIGHTS -->
+<div id="screen-insights" class="screen">
+  <div class="screen-header">
+    <h1>Insights</h1>
+    <p>Padrões identificados · Set/2025 – Mai/2026 · 33 lojas + 1 CD</p>
+  </div>
+  <div class="insight-black">
+    <div class="tag">● O que 9 meses de dados revelam</div>
+    <div class="headline">Resíduo é desperdício com endereço.<br>Agora o Dia a Dia sabe qual loja gera mais — e quando.</div>
+    <div class="body">Cada quilo de não reciclável coletado é, em boa parte, comida que não foi vendida. Com 6.207 toneladas rastreadas em 33 lojas, os dados revelam padrões que a operação do dia a dia não enxerga: onde o desperdício é maior, quando ele acontece e quais lojas fogem do padrão. O próximo passo é transformar rastreabilidade em ferramenta de gestão de perdas — e para isso, a Musa precisa de dados que só o Dia a Dia tem.</div>
+  </div>
+  <div class="sec-label orange">● O que os dados revelam</div>
+  <div class="insight-cards">
+    <div class="insight-card">
+      <div class="insight-num">01</div>
+      <div>
+        <div class="insight-title">O meio do mês concentra mais descarte — e a hipótese aponta para o ciclo de reposição</div>
+        <div class="insight-body">A semana 2 é consistentemente a mais pesada em quase todos os meses. A hipótese é que o ciclo de reposição de estoque alimenta esse padrão — produto que chega, não vende, e vira resíduo cerca de uma semana depois. Mas sem dados de compras e validade por loja, não é possível confirmar. Esse cruzamento transformaria o resíduo num indicador antecipado de desperdício.</div>
+      </div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-num">02</div>
+      <div>
+        <div class="insight-title">Segunda tem o maior peso por coleta — sinal de acúmulo no fim de semana</div>
+        <div class="insight-body">Cada coleta de segunda chega mais pesada — não porque a loja gera mais nesse dia, mas porque acumula o descarte do fim de semana. A pergunta é: o que não foi vendido no sábado e domingo? Com dados de vendas por dia, conseguimos responder se o problema está na frequência de coleta ou no mix de produtos.</div>
+      </div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-num">03</div>
+      <div>
+        <div class="insight-title">1.653 toneladas estimadas de orgânico invisível no Não Reciclável</div>
+        <div class="insight-body">Com base em benchmark de redes similares na base Musa, estimamos que 25,6% do volume total é orgânico — hoje misturado no Não Reciclável. Jardim Botânico e Águas Claras concentram o maior volume estimado. Com separação de FLV, essas lojas passariam de maiores geradoras de custo para maiores geradoras de valor.</div>
+      </div>
+    </div>
+  </div>
+  <div class="sec-label orange">● Ações prioritárias</div>
+  <div class="insight-cards">
+    <div class="insight-card">
+      <div class="insight-num">01</div>
+      <div>
+        <div class="insight-title">Garantir coleta nas segundas-feiras nas lojas T1 — sem exceção</div>
+        <div class="insight-body">O peso médio por coleta de segunda é o maior da semana. Uma coleta não realizada na segunda acumula o descarte do fim de semana por mais tempo — aumentando o risco sanitário e o volume nas coletas seguintes. Jardim Botânico, Águas Claras e Sobradinho devem ser prioridade.</div>
+      </div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-num">02</div>
+      <div>
+        <div class="insight-title">Investigar CEI Centro e Ceilândia Sul — alta variação com 8 meses de operação</div>
+        <div class="insight-body">Essas duas lojas variam acima de 70% entre o mês mais pesado e o mais leve — e não é rampagem, porque têm 8 meses de dados. O que muda nesses meses? Promoções, mix de perecíveis, volume de fornecedores? Identificar a causa é o primeiro passo para estabilizar a operação e reduzir custos variáveis de coleta.</div>
+      </div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-num">03</div>
+      <div>
+        <div class="insight-title">Usar o ranking de lojas como ferramenta de gestão de perdas com os gerentes</div>
+        <div class="insight-body">Apresentar o ranking de volume por loja para os gerentes — com benchmark claro por tier — cria responsabilidade e abre a conversa certa: por que essa loja gera mais que as vizinhas do mesmo porte? Resíduo alto sem justificativa de porte é sinal de ineficiência operacional que o gerente pode atacar.</div>
+      </div>
+    </div>
+  </div>
+  <div class="sec-label orange">● Para avançar juntos</div>
+  <div class="insight-cards">
+    <div class="insight-card">
+      <div class="insight-num">01</div>
+      <div>
+        <div class="insight-title">Volume de vendas e faturamento por loja e por mês</div>
+        <div class="insight-body">Cruzar resíduo com faturamento é o salto que transforma esse relatório em ferramenta de gestão de perdas. O KPI mais poderoso para um atacarejo: quanto de resíduo por real faturado? Lojas fora do benchmark deixam de ser conversa de operação e viram conversa de resultado.</div>
+      </div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-num">02</div>
+      <div>
+        <div class="insight-title">Dados de compras e validade por loja — quando o produto chega e quando é descartado</div>
+        <div class="insight-body">Com o ciclo de compra de cada loja, confirmamos ou derrubamos a hipótese do pico da semana 2. Se o padrão se confirmar, o time de compras passa a ter um indicador de alerta: semanas com reposição acima do normal geram picos de resíduo previsíveis — e evitáveis.</div>
+      </div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-num">03</div>
+      <div>
+        <div class="insight-title">Área m² e mix de perecíveis por loja</div>
+        <div class="insight-body">Sem dados de porte, não é possível separar loja grande de loja ineficiente. Com área e mix de FLV, construímos um benchmark ajustado por perfil — e identificamos qual parcela do resíduo é estrutural e qual é evitável. Jardim Botânico com 62t/mês pode ser eficiente para o seu porte — ou não. Só os dados respondem.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const MESES=['set/25','out/25','nov/25','dez/25','jan/26','fev/26','mar/26','abr/26','mai/26'];
+const EV_PESO=[135.7,620.9,591.7,852.1,924.0,610.1,740.7,627.4,667.1];
+const EV_UNID=[11,11,21,23,25,24,24,25,31];
+const CD_EV=[3.6,59.9,47.8,77.7,69.1,42.9,58.3,58.9,19.1];
+const DOW_LABELS=['Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
+const DOW_DATA=[1161.5,956.9,1002.2,841.4,899.2,908.4];
+const SEM_DATA=[1256.3,1368.7,1289.2,1393.0];
+const MAT_NR=[135.7,620.9,591.7,852.1,905.3,591.3,731.1,621.5,662.4];
+const MAT_ORG=[0,0,0,0,18.6,18.8,9.6,5.9,4.4];
+const ESTADO_DATA={DF:{peso:5204.8,unidades:21},GO:{peso:404.3,unidades:10},BA:{peso:103.0,unidades:1},TO:{peso:57.3,unidades:1}};
+
+const ALL_LOJAS=[
+  {loja:'42 | Jardim Botânico',media:62.3,total:561,tier:'T1',estado:'DF',cv:0.34,meses:9,pico:'Dez/25'},
+  {loja:'28 | Águas Claras',media:58.6,total:527,tier:'T1',estado:'DF',cv:0.37,meses:9,pico:'Nov/25'},
+  {loja:'04 | Sobradinho',media:50.0,total:450,tier:'T1',estado:'DF',cv:0.35,meses:9,pico:'Out/25'},
+  {loja:'32 - CEI Centro',media:47.5,total:427,tier:'T1',estado:'DF',cv:0.41,meses:9,pico:'Out/25'},
+  {loja:'07 | SIA',media:42.6,total:383,tier:'T1',estado:'DF',cv:0.35,meses:9,pico:'Out/25'},
+  {loja:'12 | Gama',media:35.0,total:315,tier:'T1',estado:'DF',cv:0.37,meses:9,pico:'Jan/26'},
+  {loja:'27 | Planaltina de Goiás',media:32.9,total:66,tier:'T1',estado:'GO',cv:0.63,meses:2,pico:'—'},
+  {loja:'50 | Mestre Darmas',media:32.8,total:295,tier:'T1',estado:'DF',cv:0.36,meses:9,pico:'Out/25'},
+  {loja:'01 - BR070',media:32.4,total:292,tier:'T1',estado:'DF',cv:0.33,meses:9,pico:'Out/25'},
+  {loja:'21 | Ceilândia Sul',media:31.9,total:287,tier:'T1',estado:'DF',cv:0.36,meses:9,pico:'Jan/26'},
+  {loja:'55 | Recanto das Emas',media:30.8,total:277,tier:'T1',estado:'DF',cv:0.34,meses:9,pico:'Dez/25'},
+  {loja:'33 | Planaltina DF',media:27.5,total:248,tier:'T2',estado:'DF',cv:0.39,meses:9,pico:'Out/25'},
+  {loja:'18 | Águas Lindas de Goiás',media:26.4,total:185,tier:'T2',estado:'GO',cv:0.43,meses:7,pico:'Jan/26'},
+  {loja:'8 | Taguatinga',media:22.6,total:158,tier:'T2',estado:'DF',cv:0.39,meses:7,pico:'Mar/26'},
+  {loja:'37 | Vicente Pires Rua 12',media:21.6,total:151,tier:'T2',estado:'DF',cv:0.43,meses:7,pico:'Jan/26'},
+  {loja:'38 | Vicente Pires Rua 4',media:21.6,total:151,tier:'T2',estado:'DF',cv:0.45,meses:7,pico:'Jan/26'},
+  {loja:'58 | Vicente Pires EPTG',media:21.5,total:150,tier:'T2',estado:'DF',cv:0.43,meses:7,pico:'Dez/25'},
+  {loja:'60 | Furnas (Samambaia Sul)',media:18.8,total:132,tier:'T2',estado:'DF',cv:0.43,meses:7,pico:'Dez/25'},
+  {loja:'34 | Samambaia I',media:18.2,total:127,tier:'T2',estado:'DF',cv:0.43,meses:7,pico:'Jan/26'},
+  {loja:'Ceilândia Norte',media:17.9,total:72,tier:'T2',estado:'DF',cv:0.69,meses:4,pico:'Mar/26'},
+  {loja:'- Luis Eduardo Magalhães',media:17.2,total:103,tier:'T2',estado:'BA',cv:0.20,meses:6,pico:'Mar/26'},
+  {loja:'16 | St. Antônio do Descoberto',media:16.0,total:112,tier:'T2',estado:'GO',cv:0.48,meses:7,pico:'Jan/26'},
+  {loja:'29 | Guará II',media:14.4,total:101,tier:'T3',estado:'DF',cv:0.43,meses:7,pico:'Jan/26'},
+  {loja:'52 | Riacho Fundo',media:14.1,total:99,tier:'T3',estado:'DF',cv:0.42,meses:7,pico:'Jan/26'},
+  {loja:'40 | Gurupi',media:11.5,total:57,tier:'T3',estado:'TO',cv:0.60,meses:5,pico:'Fev/26'},
+  {loja:'53 | Rio Verde',media:11.5,total:12,tier:'T3',estado:'GO',cv:0.88,meses:1,pico:'—'},
+  {loja:'Goiânia Balneário',media:8.2,total:8,tier:'T3',estado:'GO',cv:0.76,meses:1,pico:'—'},
+  {loja:'64 | Itumbiara',media:6.8,total:7,tier:'T3',estado:'GO',cv:0,meses:1,pico:'—'},
+  {loja:'26 | César Lattes',media:5.4,total:5,tier:'T3',estado:'GO',cv:0,meses:1,pico:'—'},
+  {loja:'47 | Aparecida de Goiânia',media:5.2,total:5,tier:'T3',estado:'GO',cv:0,meses:1,pico:'—'},
+  {loja:'Novo Gama',media:4.8,total:5,tier:'T3',estado:'GO',cv:0,meses:1,pico:'—'},
+  {loja:'Centro de Distribuição 2',media:1.0,total:2,tier:'T3',estado:'DF',cv:0.52,meses:2,pico:'—'},
+  {loja:'Luziânia (Pq Estrela Dalva II)',media:0.3,total:0.3,tier:'T3',estado:'GO',cv:0,meses:1,pico:'—'},
+];
+
+const C_OR='#FFBA86',C_ORD='#b35a00',C_BL='#8AA5FF',C_BLL='#bacaff',C_AMB='#db9865';
+Chart.defaults.font.family='Inter, sans-serif';
+Chart.defaults.font.size=12;
+Chart.defaults.color='#666';
+
+let built=false;
+function buildAll(){
+  if(built)return; built=true;
+
+  new Chart(document.getElementById('c_ev_dual'),{
+    type:'bar',
+    data:{labels:MESES,datasets:[
+      {type:'bar',label:'Volume (ton)',data:EV_PESO,backgroundColor:C_OR,borderRadius:4,borderSkipped:false,order:2,yAxisID:'y'},
+      {type:'line',label:'Unidades ativas',data:EV_UNID,borderColor:'#5577dd',borderWidth:2,pointBackgroundColor:'#5577dd',pointRadius:3,pointBorderColor:'#fff',pointBorderWidth:1.5,tension:0.3,fill:'origin',backgroundColor:'rgba(85,119,221,0.08)',order:0,yAxisID:'y1'}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false,callbacks:{label:ctx=>ctx.dataset.label==='Unidades ativas'?` Unidades: ${ctx.parsed.y}`:` Volume: ${ctx.parsed.y.toLocaleString('pt-BR')} ton`}}},
+      scales:{
+        x:{grid:{display:false},border:{display:false},ticks:{color:'#999',autoSkip:false,maxRotation:45}},
+        y:{beginAtZero:true,grid:{color:'rgba(0,0,0,0.05)'},border:{display:false},ticks:{color:'#999',callback:v=>v+'t'}},
+        y1:{position:'right',grid:{display:false},border:{display:false},ticks:{color:'#999',stepSize:5},min:0,max:40}
+      }
+    }
+  });
+
+
+
+  // LOJAS vs CD — gráfico combinado
+  (()=>{
+    const el=document.getElementById('c_lojas_cd');
+    if(!el)return;
+    const LOJAS_TOT=[135.7,620.9,591.7,852.1,924.0,610.1,740.7,627.4,667.1];
+    const CD_TOT=[3.6,59.9,47.8,77.7,69.1,42.9,58.3,58.9,19.1];
+    new Chart(el,{
+      type:'line',
+      data:{
+        labels:MESES,
+        datasets:[
+          {label:'Lojas',data:LOJAS_TOT,borderColor:'#b35a00',borderWidth:2,
+           backgroundColor:'rgba(179,90,0,0.06)',fill:true,tension:0.3,
+           pointBackgroundColor:'#b35a00',pointRadius:3,pointBorderColor:'#fff',pointBorderWidth:1.5,yAxisID:'y'},
+          {label:'CD Polo JK',data:CD_TOT,borderColor:'#8AA5FF',borderWidth:2,
+           backgroundColor:'rgba(138,165,255,0.08)',fill:true,tension:0.3,
+           pointBackgroundColor:'#8AA5FF',pointRadius:3,pointBorderColor:'#fff',pointBorderWidth:1.5,yAxisID:'y2'},
+          {label:'Orgânico estimado',data:[39,180,172,247,268,177,215,182,193],borderColor:'#FFBA86',borderWidth:1.5,backgroundColor:'rgba(255,186,134,0.08)',fill:'origin',tension:0.3,borderDash:[5,4],pointBackgroundColor:'#FFBA86',pointRadius:3,pointBorderColor:'#fff',pointBorderWidth:1.5,yAxisID:'y'}
+        ]
+      },
+      options:{
+        responsive:true,maintainAspectRatio:false,
+        plugins:{
+          legend:{display:false},
+          tooltip:{mode:'index',intersect:false,callbacks:{label:ctx=>` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString('pt-BR')} t`}}
+        },
+        scales:{
+          x:{grid:{display:false},border:{display:false},ticks:{color:'#999',autoSkip:false,maxRotation:45}},
+          y:{beginAtZero:true,grid:{color:'rgba(0,0,0,0.05)'},border:{display:false},
+             ticks:{color:'#b35a00',stepSize:200,callback:v=>v+'t'}},
+          y2:{beginAtZero:true,position:'right',grid:{display:false},border:{display:false},
+              ticks:{color:'#8AA5FF',stepSize:20,callback:v=>v+'t'}}
+        }
+      }
+    });
+  })();
+
+  // HEATMAP SEMANA DO MÊS
+  (()=>{
+    const el=document.getElementById('heatmap-sem');
+    if(!el)return;
+    const MESES_HM=['Set/25','Out/25','Nov/25','Dez/25','Jan/26','Fev/26','Mar/26','Abr/26','Mai/26'];
+    const MATRIX={
+      'Set/25':[0,0,0,105.6,33.6],
+      'Out/25':[121.2,173.6,166.5,153.5,66.0],
+      'Nov/25':[166.0,160.2,148.3,143.6,21.4],
+      'Dez/25':[163.4,226.0,210.7,202.6,127.1],
+      'Jan/26':[210.6,242.4,245.9,208.1,86.1],
+      'Fev/26':[162.3,164.4,162.2,164.0,0],
+      'Mar/26':[183.0,190.6,182.5,183.6,59.4],
+      'Abr/26':[173.4,162.5,129.1,169.5,51.8],
+      'Mai/26':[158.0,161.8,144.7,172.1,49.6],
+    };
+    const maxV=245.9;
+    function cellBg(v){
+      if(!v)return'#f0f0f0';
+      const t=v/maxV;
+      if(t<0.35)return'#bacaff';
+      if(t<0.6)return'#8AA5FF';
+      if(t<0.8)return'#FFBA86';
+      return'#b35a00';
+    }
+    function textColor(v){return(v/maxV)>0.8?'#fff':'#222';}
+    // find max per column (month)
+    const colMax={};
+    MESES_HM.forEach(m=>{
+      colMax[m]=Math.max(...[0,1,2,3,4].map(i=>MATRIX[m][i]));
+    });
+    // compute row averages (sem 5 excluded from avg — partial weeks)
+    const rowAvg=[0,1,2,3].map(i=>{
+      const vals=MESES_HM.map(m=>MATRIX[m][i]).filter(v=>v>0);
+      return vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:0;
+    });
+    rowAvg.push(MESES_HM.map(m=>MATRIX[m][4]).filter(v=>v>0).reduce((a,b,_,arr)=>a+b/arr.length,0));
+    const maxAvg=Math.max(...rowAvg);
+
+    let html=`<table style="width:100%;border-collapse:separate;border-spacing:3px;font-size:11px">
+      <thead><tr><th style="text-align:left;color:#999;font-size:10px;font-weight:600;padding:4px 6px"></th>`;
+    MESES_HM.forEach(m=>{html+=`<th style="text-align:center;color:#999;font-size:10px;font-weight:600;padding:4px 4px">${m}</th>`;});
+
+    html+=`</tr></thead><tbody>`;
+    ['Sem 1','Sem 2','Sem 3','Sem 4','Sem 5'].forEach((s,i)=>{
+      html+=`<tr><td style="color:#666;font-size:11px;font-weight:500;padding:4px 6px;white-space:nowrap">${s}</td>`;
+      MESES_HM.forEach(m=>{
+        const v=MATRIX[m][i];
+        const isPeak=v>0&&v===colMax[m];
+        html+=`<td style="background:${cellBg(v)};border-radius:6px;text-align:center;padding:14px 4px;color:${textColor(v)};font-size:11px;font-weight:500;cursor:default;transition:filter .12s"
+          onmouseenter="this.style.filter='brightness(0.88)'" onmouseleave="this.style.filter=''">${v?v.toFixed(0)+(isPeak?' ↑':''):'—'}</td>`;
+      });
+
+      html+=`</tr>`;
+    });
+    html+=`</tbody></table>`;
+    html+=`<div style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:10px;color:#999">
+      <span>Menor</span>
+      <div style="width:20px;height:10px;border-radius:3px;background:#bacaff"></div>
+      <div style="width:20px;height:10px;border-radius:3px;background:#8AA5FF"></div>
+      <div style="width:20px;height:10px;border-radius:3px;background:#FFBA86"></div>
+      <div style="width:20px;height:10px;border-radius:3px;background:#b35a00"></div>
+      <span>Maior</span>
+      <span style="margin-left:6px">· valores em toneladas</span>
+    </div>`;
+    el.innerHTML=html;
+  })();
+
+
+}
+
+function tierBadge(t){const m={T1:'badge-t1',T2:'badge-t2',T3:'badge-t3'};return `<span class="badge ${m[t]}">${t}</span>`;}
+function estBadge(e){return `<span class="badge badge-${e.toLowerCase()}">${e}</span>`;}
+function cvColor(cv){return cv>=0.6?'#cc4444':cv>=0.4?'#c47a30':'#5577dd';}
+function cvLabel(cv,meses){
+  if(meses<=1)return '<span style="color:#bbb;font-size:11px">—</span>';
+  const col=cvColor(cv);
+  return `<span style="display:inline-flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:50%;background:${col};flex-shrink:0"></span><span style="color:${col};font-size:12px">${cv.toFixed(2)}</span></span>`;
+}
+
+const ESTADO_FULL={'DF':'Distrito Federal','GO':'Goiás','BA':'Bahia','TO':'Tocantins'};
+function ufPill(e){return `<span class="uf-pill">${e}</span>`;}
+function tPill(t){return `<span class="tier-pill ${t.toLowerCase()}">${t}</span>`;}
+
+function buildTop10(){
+  const top=ALL_LOJAS.slice(0,10);
+  document.getElementById('top10-table').innerHTML=`<table class="data-table"><thead><tr><th>Unidade</th><th>Estado</th><th>UF</th><th>Tier</th><th>Média/mês</th></tr></thead><tbody>`+
+    top.map(l=>`<tr>
+      <td style="font-size:13px">${l.loja}</td>
+      <td style="font-size:12px;color:var(--text-mid)">${ESTADO_FULL[l.estado]||l.estado}</td>
+      <td>${ufPill(l.estado)}</td>
+      <td>${tPill(l.tier)}</td>
+      <td>${l.media.toFixed(1)} t</td>
+    </tr>`).join('')+`</tbody></table>`;
+}
+
+function buildBottom10(){
+  const bot=ALL_LOJAS.slice(-10).reverse();
+  document.getElementById('bottom10-table').innerHTML=`<table class="data-table"><thead><tr><th>Unidade</th><th>Estado</th><th>UF</th><th>Tier</th><th>Média/mês</th></tr></thead><tbody>`+
+    bot.map(l=>`<tr>
+      <td style="font-size:13px">${l.loja}${l.meses<=1?' <span style="font-size:10px;color:#cc8844">⚠</span>':''}</td>
+      <td style="font-size:12px;color:var(--text-mid)">${ESTADO_FULL[l.estado]||l.estado}</td>
+      <td>${ufPill(l.estado)}</td>
+      <td>${tPill(l.tier)}</td>
+      <td>${l.media.toFixed(1)} t</td>
+    </tr>`).join('')+`</tbody></table>`;
+}
+
+function buildRankingFull(){
+  const el=document.getElementById('ranking-full'); if(!el)return;
+  const mx=ALL_LOJAS[0].media;
+  el.innerHTML=`<table class="data-table"><thead><tr><th>#</th><th>Loja</th><th>UF</th><th>Tier</th><th>ton/mês</th><th>CV</th></tr></thead><tbody>`+
+    ALL_LOJAS.map((l,i)=>`<tr><td style="color:#bbb;font-size:11px">${i+1}</td><td style="font-size:11px">${l.loja}</td><td>${estBadge(l.estado)}</td><td>${tierBadge(l.tier)}</td>
+    <td><div style="display:flex;align-items:center;gap:6px"><span style="font-family:'Libre Caslon Text',serif;font-size:13px">${l.media.toFixed(1)}</span>
+    <div class="rank-bar-wrap" style="width:50px"><div class="rank-bar-fill" style="width:${Math.round(l.media/mx*100)}%;background:${l.tier==='T1'?C_ORD:l.tier==='T2'?C_OR:'#ddd'}"></div></div></div></td>
+    <td>${cvLabel(l.cv,l.meses)}</td></tr>`).join('')+`</tbody></table>`;
+}
+
+const RA_DATA = [
+  {ra:'Ceilândia',      unidades:4, peso:1078, pct:20.7},
+  {ra:'Águas Claras',   unidades:2, peso:685,  pct:13.2},
+  {ra:'Lago Sul',       unidades:1, peso:561,  pct:10.8},
+  {ra:'Planaltina',     unidades:2, peso:543,  pct:10.4},
+  {ra:'Guará',          unidades:2, peso:484,  pct:9.3},
+  {ra:'Vicente Pires',  unidades:3, peso:452,  pct:8.7},
+  {ra:'Sobradinho',     unidades:1, peso:450,  pct:8.6},
+  {ra:'Gama',           unidades:1, peso:315,  pct:6.1},
+  {ra:'Recanto das Emas',unidades:1,peso:277,  pct:5.3},
+  {ra:'Samambaia',      unidades:2, peso:259,  pct:5.0},
+  {ra:'Riacho Fundo',   unidades:1, peso:99,   pct:1.9},
+  {ra:'Santa Maria',    unidades:1, peso:2,    pct:0.0},
+];
+
+function buildEstadoBars(){
+  const total=Object.values(ESTADO_DATA).reduce((a,v)=>a+v.peso,0);
+  const maxPeso=Math.max(...Object.values(ESTADO_DATA).map(d=>d.peso));
+  const colors={DF:C_ORD,GO:C_BL,BA:C_OR,TO:C_BLL};
+  const mediaMap={DF:27.5,GO:4.5,BA:11.4,TO:6.4};
+  const maxMedia=27.5;
+  const el=document.getElementById('estado-bars-new')||document.getElementById('estado-bars');
+  if(!el)return;
+  const rows=Object.entries(ESTADO_DATA).sort((a,b)=>b[1].peso-a[1].peso).map(([uf,d])=>{
+    const color=colors[uf];
+    const pct=(d.peso/total*100).toFixed(1);
+    const pctW=Math.round(d.peso/maxPeso*100);
+    const media=(mediaMap[uf]||0).toFixed(1);
+    const mediaW=Math.round((mediaMap[uf]||0)/maxMedia*100);
+    return `<div style="display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;padding:8px 6px;border-radius:8px;transition:background .12s;cursor:default"
+      onmouseenter="this.style.background='rgba(0,0,0,0.04)'"
+      onmouseleave="this.style.background=''">
+      <div>
+        <div style="font-size:13px;font-weight:500;color:var(--text)">${uf}</div>
+        <div style="font-size:10px;color:var(--text-light);margin-top:2px">${d.unidades} lojas · ${d.peso.toLocaleString('pt-BR')} t</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="flex:1;background:rgba(0,0,0,0.07);border-radius:3px;height:12px;overflow:hidden">
+            <div style="width:${pctW}%;height:100%;background:${color};border-radius:3px"></div>
+          </div>
+          <span style="font-size:11px;font-weight:600;color:${uf==='DF'?C_ORD:'var(--text-mid)'};white-space:nowrap;min-width:40px;text-align:right">${pct}%</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="flex:1;background:rgba(0,0,0,0.05);border-radius:3px;height:5px;overflow:hidden">
+            <div style="width:${mediaW}%;height:100%;background:${color};opacity:0.45;border-radius:3px"></div>
+          </div>
+          <span style="font-size:10px;color:var(--text-light);white-space:nowrap;min-width:40px;text-align:right">${media} t/loja</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  el.innerHTML=rows+`<div style="display:flex;gap:20px;margin-top:12px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.06);font-size:11px;color:var(--text-mid)">
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:var(--orange-dark);border-radius:2px"></span>% do volume total</span>
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:16px;height:4px;background:var(--orange-dark);opacity:0.45;border-radius:2px"></span>Média mensal por loja</span>
+  </div>`;
+}
+
+function buildRABars(){
+  const maxPeso=RA_DATA[0].peso;
+  const totalRA=RA_DATA.reduce((a,d)=>a+d.peso,0);
+  const el=document.getElementById('ra-bars');
+  if(!el)return;
+  const raMediaMap={'Ceilândia':29.9,'Águas Claras':38.1,'Lago Sul':62.3,'Planaltina':30.2,'Guará':26.9,'Vicente Pires':16.7,'Sobradinho':50.0,'Gama':35.0,'Recanto das Emas':30.8,'Samambaia':14.4,'Riacho Fundo':11.0,'Santa Maria':0.2};
+  const maxRAMedia=62.3;
+  const rows=RA_DATA.map(d=>{
+    const highlight=d.ra==='Ceilândia'||d.ra==='Lago Sul';
+    const pct=(d.peso/totalRA*100).toFixed(1);
+    const pctW=Math.round(d.peso/maxPeso*100);
+    const color=highlight?C_ORD:C_OR;
+    const media=(raMediaMap[d.ra]||0).toFixed(1);
+    const mediaW=Math.round((raMediaMap[d.ra]||0)/maxRAMedia*100);
+    return `<div style="display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:center;padding:8px 6px;border-radius:8px;transition:background .12s;cursor:default"
+      onmouseenter="this.style.background='rgba(0,0,0,0.04)'"
+      onmouseleave="this.style.background=''">
+      <div>
+        <div style="font-size:13px;font-weight:${highlight?'600':'400'};color:var(--text)">${d.ra}</div>
+        <div style="font-size:10px;color:var(--text-light);margin-top:2px">${d.unidades} ${d.unidades===1?'loja':'lojas'} · ${d.peso.toLocaleString('pt-BR')} t</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="flex:1;background:rgba(0,0,0,0.07);border-radius:3px;height:12px;overflow:hidden">
+            <div style="width:${pctW}%;height:100%;background:${color};border-radius:3px"></div>
+          </div>
+          <span style="font-size:11px;font-weight:${highlight?'600':'400'};color:${highlight?C_ORD:'var(--text-mid)'};white-space:nowrap;min-width:40px;text-align:right">${pct}%</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="flex:1;background:rgba(0,0,0,0.05);border-radius:3px;height:5px;overflow:hidden">
+            <div style="width:${mediaW}%;height:100%;background:${color};opacity:0.45;border-radius:3px"></div>
+          </div>
+          <span style="font-size:10px;color:var(--text-light);white-space:nowrap;min-width:40px;text-align:right">${media} t/loja</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  el.innerHTML=rows+`<div style="display:flex;gap:20px;margin-top:12px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.06);font-size:11px;color:var(--text-mid)">
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:var(--orange-dark);border-radius:2px"></span>% do volume no DF</span>
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:16px;height:4px;background:var(--orange-dark);opacity:0.45;border-radius:2px"></span>Média mensal por loja</span>
+  </div>`;
+}
+
+const VAR_LOJAS=[
+  {loja:'40 | Gurupi',estado:'TO',meses:4,media:9.7,minv:4.4,maxv:18.8,var_abs:149.1,pct_rel:100,pico:'Fev/26'},
+  {loja:'17 | CD Polo JK',estado:'DF',meses:8,media:54.2,minv:19.1,maxv:77.7,var_abs:108.1,pct_rel:96,pico:'Dez/25'},
+  {loja:'32 - CEI Centro',estado:'DF',meses:8,media:51.7,minv:25.8,maxv:70.7,var_abs:87.1,pct_rel:92,pico:'Out/25'},
+  {loja:'21 | Ceilândia Sul',estado:'DF',meses:8,media:34.0,minv:22.1,maxv:46.9,var_abs:73.0,pct_rel:88,pico:'Jan/26'},
+  {loja:'28 | Águas Claras',estado:'DF',meses:8,media:63.5,minv:38.5,maxv:84.0,var_abs:71.6,pct_rel:83,pico:'Nov/25'},
+  {loja:'07 | SIA',estado:'DF',meses:8,media:46.2,minv:32.1,maxv:63.6,var_abs:68.2,pct_rel:79,pico:'Out/25'},
+  {loja:'04 | Sobradinho',estado:'DF',meses:8,media:54.4,minv:33.9,maxv:70.7,var_abs:67.7,pct_rel:75,pico:'Out/25'},
+  {loja:'33 | Planaltina DF',estado:'DF',meses:8,media:30.2,minv:20.0,maxv:40.0,var_abs:66.3,pct_rel:71,pico:'Out/25'},
+  {loja:'12 | Gama',estado:'DF',meses:8,media:38.3,minv:26.1,maxv:51.4,var_abs:66.0,pct_rel:67,pico:'Jan/26'},
+  {loja:'50 | Mestre Darmas',estado:'DF',meses:8,media:35.8,minv:26.2,maxv:49.4,var_abs:64.6,pct_rel:62,pico:'Out/25'},
+  {loja:'- Luis Eduardo Magalhães',estado:'BA',meses:5,media:17.0,minv:12.5,maxv:22.3,var_abs:57.8,pct_rel:58,pico:'Mar/26'},
+  {loja:'Ceilândia Norte',estado:'DF',meses:3,media:23.2,minv:17.5,maxv:30.2,var_abs:54.8,pct_rel:54,pico:'Mar/26'},
+  {loja:'16 | St. Antônio do Descoberto',estado:'GO',meses:6,media:18.5,minv:14.5,maxv:24.5,var_abs:54.1,pct_rel:50,pico:'Jan/26'},
+  {loja:'55 | Recanto das Emas',estado:'DF',meses:8,media:33.3,minv:26.1,maxv:43.7,var_abs:52.8,pct_rel:46,pico:'Dez/25'},
+  {loja:'01 - BR070',estado:'DF',meses:8,media:35.3,minv:24.7,maxv:43.1,var_abs:51.9,pct_rel:42,pico:'Out/25'},
+  {loja:'29 | Guará II',estado:'DF',meses:6,media:16.5,minv:13.4,maxv:21.7,var_abs:50.5,pct_rel:38,pico:'Jan/26'},
+  {loja:'42 | Jardim Botânico',estado:'DF',meses:8,media:68.3,minv:55.4,maxv:85.7,var_abs:44.4,pct_rel:33,pico:'Dez/25'},
+  {loja:'52 | Riacho Fundo',estado:'DF',meses:6,media:16.1,minv:13.1,maxv:20.2,var_abs:43.7,pct_rel:29,pico:'Jan/26'},
+  {loja:'37 | Vicente Pires Rua 12',estado:'DF',meses:6,media:24.8,minv:20.6,maxv:30.2,var_abs:38.9,pct_rel:21,pico:'Jan/26'},
+  {loja:'38 | Vicente Pires Rua 4',estado:'DF',meses:6,media:24.9,minv:21.0,maxv:30.7,var_abs:38.9,pct_rel:21,pico:'Jan/26'},
+  {loja:'34 | Samambaia I',estado:'DF',meses:6,media:20.9,minv:17.6,maxv:25.7,var_abs:38.3,pct_rel:17,pico:'Jan/26'},
+  {loja:'58 | Vicente Pires EPTG',estado:'DF',meses:6,media:24.7,minv:19.8,maxv:29.1,var_abs:37.9,pct_rel:12,pico:'Dez/25'},
+  {loja:'60 | Furnas (Samambaia Sul)',estado:'DF',meses:6,media:21.7,minv:17.7,maxv:25.3,var_abs:35.3,pct_rel:8,pico:'Dez/25'},
+  {loja:'18 | Águas Lindas de Goiás',estado:'GO',meses:6,media:30.5,minv:25.5,maxv:36.1,var_abs:34.7,pct_rel:4,pico:'Jan/26'},
+  {loja:'8 | Taguatinga',estado:'DF',meses:6,media:25.8,minv:23.7,maxv:28.6,var_abs:19.1,pct_rel:0,pico:'Mar/26'}
+];
+function buildCVChart(){
+  const cvEl=document.getElementById('cv-chart'); if(!cvEl)return;
+
+  // Custom tooltip
+  const cvTip=document.createElement('div');
+  cvTip.style.cssText='display:none;position:fixed;z-index:999;background:#222;color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:12px 16px;border-radius:10px;pointer-events:none;line-height:1.8;min-width:200px';
+  document.body.appendChild(cvTip);
+
+  const maxVar=VAR_LOJAS[0].var_abs;
+  const rows=VAR_LOJAS.map((d,idx)=>{
+    const isProblem=d.var_abs>80;
+    const isModerate=d.var_abs>50&&d.var_abs<=80;
+    const color=isProblem?C_ORD:isModerate?C_OR:C_BL;
+    const barW=Math.round(d.var_abs/maxVar*100);
+    return `<div data-idx="${idx}" style="display:grid;grid-template-columns:170px 1fr 52px;gap:14px;align-items:center;padding:7px 6px;border-radius:8px;transition:background .12s;cursor:default"
+      onmouseenter="this.style.background='rgba(0,0,0,0.04)';cvShowTip(event,${idx})"
+      onmousemove="cvMoveTip(event)"
+      onmouseleave="this.style.background='';cvHideTip()">
+      <div>
+        <div style="font-size:12px;font-weight:${isProblem?'600':'400'};color:${isProblem?C_ORD:'var(--text)'}">${d.loja}</div>
+        <div style="font-size:10px;color:var(--text-light);margin-top:1px">${d.estado} · ${d.meses} meses</div>
+      </div>
+      <div style="background:rgba(0,0,0,0.07);border-radius:3px;height:10px;overflow:hidden">
+        <div style="width:${barW}%;height:100%;background:${color};border-radius:3px"></div>
+      </div>
+      <div style="font-size:13px;font-weight:600;color:${color};text-align:right">${d.var_abs}%</div>
+    </div>`;
+  }).join('');
+
+  cvEl.innerHTML=rows+`<div style="display:flex;gap:20px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.06);font-size:11px;color:var(--text-mid)">
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:${C_ORD};border-radius:2px"></span>Alta variação (&gt;80%)</span>
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:${C_OR};border-radius:2px"></span>Moderada (50–80%)</span>
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:${C_BL};border-radius:2px"></span>Consistente (&lt;50%)</span>
+    <span style="color:var(--text-light)">· % = diferença entre o mês mais pesado e o mais leve em relação à média</span>
+  </div>`;
+
+  window.cvShowTip=function(e,idx){
+    const d=VAR_LOJAS[idx];
+    cvTip.innerHTML=`<div style="font-weight:600;margin-bottom:6px;font-size:13px">${d.loja}</div>
+      <div style="color:rgba(255,255,255,0.7)">Mínimo: <span style="color:#fff;font-weight:500">${d.minv} t</span></div>
+      <div style="color:rgba(255,255,255,0.7)">Média: <span style="color:#fff;font-weight:500">${d.media} t</span></div>
+      <div style="color:rgba(255,255,255,0.7)">Máximo: <span style="color:#fff;font-weight:500">${d.maxv} t</span></div>
+      <div style="color:rgba(255,255,255,0.7)">Mês de pico: <span style="color:#FFBA86;font-weight:500">${d.pico}</span></div>
+      <div style="color:rgba(255,255,255,0.7);margin-top:6px;border-top:1px solid rgba(255,255,255,0.1);padding-top:6px">Varia mais que <span style="color:#FFBA86;font-weight:500">${d.pct_rel}%</span> das lojas</div>`;
+    cvTip.style.display='block';
+    cvMoveTip(e);
+  };
+  window.cvMoveTip=function(e){cvTip.style.left=(e.clientX+14)+'px';cvTip.style.top=(e.clientY-10)+'px';};
+  window.cvHideTip=function(){cvTip.style.display='none';};
+}
+
+
+function buildDow(){
+  const el=document.getElementById('dow-bars-new');
+  if(!el)return;
+  const DOW_FULL=[
+    {dia:'Segunda',peso:1228.3,coletas:787,media:1.56},
+    {dia:'Terça',  peso:1026.8,coletas:699,media:1.47},
+    {dia:'Quarta', peso:1101.8,coletas:758,media:1.45},
+    {dia:'Quinta', peso:1001.7,coletas:706,media:1.42},
+    {dia:'Sexta',  peso:1116.2,coletas:731,media:1.53},
+    {dia:'Sábado', peso:967.1, coletas:766,media:1.26},
+  ];
+  const maxPeso=Math.max(...DOW_FULL.map(d=>d.peso));
+  const maxMedia=Math.max(...DOW_FULL.map(d=>d.media));
+  const total=DOW_FULL.reduce((a,d)=>a+d.peso,0);
+  const rows=DOW_FULL.map(d=>{
+    const isPeak=d.peso===maxPeso;
+    const volW=Math.round(d.peso/maxPeso*100);
+    const mediaW=Math.round(d.media/maxMedia*100);
+    return `<div style="display:grid;grid-template-columns:90px 1fr 80px;gap:14px;align-items:center;padding:8px 6px;border-radius:8px;transition:background .12s;cursor:default"
+      onmouseenter="this.style.background='rgba(0,0,0,0.04)'"
+      onmouseleave="this.style.background=''">
+      <div>
+        <div style="font-size:13px;font-weight:${isPeak?'600':'400'};color:${isPeak?C_ORD:'var(--text)'}">
+          ${d.dia}${isPeak?' ↑':''}
+        </div>
+        <div style="font-size:10px;color:var(--text-light);margin-top:2px">${d.coletas} coletas</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="flex:1;background:rgba(0,0,0,0.07);border-radius:3px;height:12px;overflow:hidden">
+            <div style="width:${volW}%;height:100%;background:${isPeak?C_ORD:C_OR};border-radius:3px"></div>
+          </div>
+          <span style="font-size:11px;font-weight:${isPeak?'600':'400'};color:${isPeak?C_ORD:'var(--text-mid)'};white-space:nowrap;min-width:52px;text-align:right">${(d.peso/1000).toFixed(2)}k t</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="flex:1;background:rgba(0,0,0,0.05);border-radius:3px;height:5px;overflow:hidden">
+            <div style="width:${mediaW}%;height:100%;background:#8AA5FF;border-radius:3px"></div>
+          </div>
+          <span style="font-size:10px;color:var(--text-light);white-space:nowrap;min-width:52px;text-align:right">${d.media.toFixed(2)} t/coleta</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  el.innerHTML=rows+`<div style="display:flex;gap:20px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.06);font-size:11px;color:var(--text-mid)">
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:var(--orange-dark);border-radius:2px"></span>Volume total</span>
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:16px;height:4px;background:#8AA5FF;border-radius:2px"></span>Média por coleta (t)</span>
+  </div>`;
+}
+
+// GO CIDADES
+function buildTiersEstado(){
+  const el=document.getElementById('go-cidade-bars');
+  if(!el)return;
+  const GO_DATA=[
+    {cidade:'Águas Lindas de Goiás', unidades:1, peso:185.0, media:26.4},
+    {cidade:'Santo Antônio do Desc.',unidades:1, peso:112.0, media:16.0},
+    {cidade:'Planaltina',            unidades:1, peso:65.8,  media:32.9},
+    {cidade:'Goiânia',               unidades:3, peso:24.6,  media:2.7},
+    {cidade:'Novo Gama',             unidades:1, peso:4.8,   media:4.8},
+    {cidade:'Luziânia',              unidades:1, peso:0.3,   media:0.3},
+  ];
+  const maxPeso=GO_DATA[0].peso;
+  const totalGO=GO_DATA.reduce((a,d)=>a+d.peso,0);
+  const maxMedia=Math.max(...GO_DATA.map(d=>d.media));
+  const rows=GO_DATA.map(d=>{
+    const pct=(d.peso/totalGO*100).toFixed(1);
+    const volW=Math.round(d.peso/maxPeso*100);
+    const mediaW=Math.round(d.media/maxMedia*100);
+    const highlight=d.cidade==='Águas Lindas de Goiás'||d.cidade==='Planaltina';
+    return `<div style="display:grid;grid-template-columns:180px 1fr;gap:16px;align-items:center;padding:8px 6px;border-radius:8px;transition:background .12s;cursor:default"
+      onmouseenter="this.style.background='rgba(0,0,0,0.04)'"
+      onmouseleave="this.style.background=''">
+      <div>
+        <div style="font-size:13px;font-weight:${highlight?'600':'400'};color:var(--text)">${d.cidade}</div>
+        <div style="font-size:10px;color:var(--text-light);margin-top:2px">${d.unidades} ${d.unidades===1?'loja':'lojas'} · ${d.peso.toLocaleString('pt-BR')} t</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="flex:1;background:rgba(0,0,0,0.07);border-radius:3px;height:12px;overflow:hidden">
+            <div style="width:${volW}%;height:100%;background:${highlight?'#5577dd':C_BL};border-radius:3px"></div>
+          </div>
+          <span style="font-size:11px;font-weight:${highlight?'600':'400'};color:${highlight?'#5577dd':'var(--text-mid)'};white-space:nowrap;min-width:40px;text-align:right">${pct}%</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="flex:1;background:rgba(0,0,0,0.05);border-radius:3px;height:5px;overflow:hidden">
+            <div style="width:${mediaW}%;height:100%;background:${highlight?'#5577dd':C_BL};opacity:0.45;border-radius:3px"></div>
+          </div>
+          <span style="font-size:10px;color:var(--text-light);white-space:nowrap;min-width:40px;text-align:right">${d.media.toFixed(1)} t/loja</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  el.innerHTML=rows+`<div style="display:flex;gap:20px;margin-top:12px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.06);font-size:11px;color:var(--text-mid)">
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#5577dd;border-radius:2px"></span>% do volume em GO</span>
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:16px;height:4px;background:#5577dd;opacity:0.45;border-radius:2px"></span>Média mensal por loja</span>
+  </div>`;
+}
+
+// LOJAS FORA DO DF
+function buildLojasFora(){
+  const el=document.getElementById('lojas-fora-df');
+  if(!el)return;
+  const lojas=[
+    {loja:'18 | Águas Lindas de Goiás',estado:'GO',tier:'T2',media:26.4,total:185,pico:'Jan/26'},
+    {loja:'27 | Planaltina de Goiás',  estado:'GO',tier:'T1',media:32.9,total:66,pico:'—'},
+    {loja:'16 | St. Antônio do Desc.', estado:'GO',tier:'T2',media:16.0,total:112,pico:'—'},
+    {loja:'- Luis Eduardo Magalhães',  estado:'BA',tier:'T2',media:17.2,total:103,pico:'Mar/26'},
+    {loja:'53 | Rio Verde',            estado:'GO',tier:'T3',media:11.5,total:12,pico:'—'},
+    {loja:'Goiânia Balneário',         estado:'GO',tier:'T3',media:8.2, total:8,pico:'—'},
+    {loja:'64 | Itumbiara',            estado:'GO',tier:'T3',media:6.8, total:7,pico:'—'},
+    {loja:'26 | César Lattes',         estado:'GO',tier:'T3',media:5.4, total:5,pico:'—'},
+    {loja:'47 | Aparecida de Goiânia', estado:'GO',tier:'T3',media:5.2, total:5,pico:'—'},
+    {loja:'40 | Gurupi',               estado:'TO',tier:'T3',media:11.5,total:57,pico:'Fev/26'},
+    {loja:'Novo Gama',                 estado:'GO',tier:'T3',media:4.8, total:5,pico:'—'},
+    {loja:'Luziânia (Pq Estrela)',     estado:'GO',tier:'T3',media:0.3, total:0.3,pico:'—'},
+  ];
+  const maxMedia=lojas[0].media;
+  const tierColors={'T1':'#b35a00','T2':'#FFBA86','T3':'#e0e0e0'};
+  const estColors={'GO':'#8AA5FF','BA':'#FFBA86','TO':'#bacaff'};
+  el.innerHTML=lojas.map(l=>{
+    const barW=Math.round(l.media/maxMedia*100);
+    const color=estColors[l.estado];
+    return `<div style="display:grid;grid-template-columns:200px 1fr 70px;gap:16px;align-items:center;padding:7px 6px;border-radius:8px;transition:background .12s;cursor:default"
+      onmouseenter="this.style.background='rgba(0,0,0,0.04)'"
+      onmouseleave="this.style.background=''">
+      <div>
+        <div style="font-size:12px;font-weight:500;color:var(--text)">${l.loja}</div>
+        <div style="display:flex;align-items:center;gap:6px;margin-top:3px">
+          <span class="badge badge-${l.estado.toLowerCase()}" style="font-size:10px">${l.estado}</span>
+          <span class="badge badge-${l.tier.toLowerCase()}" style="font-size:10px">${l.tier}</span>
+        </div>
+      </div>
+      <div style="background:rgba(0,0,0,0.07);border-radius:3px;height:8px;overflow:hidden">
+        <div style="width:${barW}%;height:100%;background:${color};border-radius:3px"></div>
+      </div>
+      <div style="font-size:12px;color:var(--text-mid);text-align:right">${l.media.toFixed(1)} t/mês</div>
+    </div>`;
+  }).join('')+`<div style="display:flex;gap:20px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.06);font-size:11px;color:var(--text-mid)">
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#8AA5FF;border-radius:2px"></span>GO</span>
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#FFBA86;border-radius:2px"></span>BA</span>
+    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:10px;height:10px;background:#bacaff;border-radius:2px"></span>TO</span>
+    <span style="color:var(--text-light)">· Média mensal de toneladas coletadas</span>
+  </div>`;
+}
+
+// VOLUME POR ESTADO MENSAL
+function buildVolEstado(){
+  const el=document.getElementById('c_vol_estado');
+  if(!el)return;
+  const ex=Chart.getChart(el); if(ex)ex.destroy();
+  new Chart(el,{
+    type:'line',
+    data:{
+      labels:['set/25','out/25','nov/25','dez/25','jan/26','fev/26','mar/26','abr/26','mai/26'],
+      datasets:[
+        {label:'DF',data:[139.3,680.8,637.1,842.0,843.3,581.4,723.4,614.0,580.8],
+          borderColor:'#b35a00',backgroundColor:'rgba(179,90,0,0.06)',
+          borderWidth:2,fill:true,tension:0.3,
+          pointBackgroundColor:'#b35a00',pointRadius:3,pointBorderColor:'#fff',pointBorderWidth:1.5},
+        {label:'GO',data:[0,0,2.3,69.9,112.9,40.3,43.8,51.9,83.3],
+          borderColor:'#8AA5FF',backgroundColor:'rgba(138,165,255,0.06)',
+          borderWidth:2,fill:true,tension:0.3,
+          pointBackgroundColor:'#8AA5FF',pointRadius:3,pointBorderColor:'#fff',pointBorderWidth:1.5},
+        {label:'BA',data:[0,0,0,17.8,18.3,12.5,22.3,14.4,17.7],
+          borderColor:'#FFBA86',backgroundColor:'transparent',
+          borderWidth:2,fill:false,tension:0.3,
+          pointBackgroundColor:'#FFBA86',pointRadius:3,pointBorderColor:'#fff',pointBorderWidth:1.5},
+        {label:'TO',data:[0,0,0,0,18.6,18.8,9.6,5.9,4.4],
+          borderColor:'#bacaff',backgroundColor:'transparent',
+          borderWidth:2,fill:false,tension:0.3,
+          pointBackgroundColor:'#bacaff',pointRadius:3,pointBorderColor:'#fff',pointBorderWidth:1.5},
+      ]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{mode:'index',intersect:false,callbacks:{label:ctx=>` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString('pt-BR')} t`}}
+      },
+      scales:{
+        x:{grid:{display:false},border:{display:false},ticks:{color:'#999',autoSkip:false,maxRotation:45}},
+        y:{beginAtZero:true,grid:{color:'rgba(0,0,0,0.05)'},border:{display:false},ticks:{color:'#999',callback:v=>v+'t'}}
+      }
+    }
+  });
+}
+
+// ORGANICO ESTIMADO TOP 5
+function buildOrgTop5(){
+  const el=document.getElementById('c_org_top5');
+  if(!el)return;
+  const ex=Chart.getChart(el);if(ex)ex.destroy();
+
+  const MESES_L=['Set/25','Out/25','Nov/25','Dez/25','Jan/26','Fev/26','Mar/26','Abr/26','Mai/26'];
+  const TOP5=[
+    {loja:'Jardim Botânico', org:[4.2,20.5,21.0,24.9,24.4,16.4,18.2,17.1,16.1], color:'#b35a00'},
+    {loja:'Águas Claras',    org:[5.7,24.3,24.4,21.8,20.3,15.1,17.5,12.8,11.2], color:'#FFBA86'},
+    {loja:'Sobradinho',      org:[4.4,20.5,18.6,18.1,18.4,12.7,13.9,9.8,14.1],  color:'#8AA5FF'},
+    {loja:'CEI Centro',      org:[4.1,20.5,20.1,17.6,16.3,10.6,15.3,7.5,11.9],  color:'#5577dd'},
+    {loja:'SIA',             org:[3.9,18.4,14.6,16.6,14.7,9.3,11.0,11.2,11.3],  color:'#bacaff'},
+  ];
+
+  new Chart(el,{
+    type:'line',
+    data:{
+      labels:MESES_L,
+      datasets:TOP5.map(d=>({
+        label:d.loja,
+        data:d.org,
+        borderColor:d.color,
+        backgroundColor:'transparent',
+        borderWidth:2,
+        tension:0.3,
+        pointBackgroundColor:d.color,
+        pointRadius:3,
+        pointBorderColor:'#fff',
+        pointBorderWidth:1.5,
+      }))
+    },
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{mode:'index',intersect:false,callbacks:{
+          label:ctx=>` ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(1)} t`
+        }}
+      },
+      scales:{
+        x:{grid:{display:false},border:{display:false},ticks:{color:'#999',autoSkip:false,maxRotation:45}},
+        y:{beginAtZero:true,grid:{color:'rgba(0,0,0,0.05)'},border:{display:false},ticks:{color:'#999',callback:v=>v+'t'}}
+      }
+    }
+  });
+}
+
+function showTab(id,btn){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('screen-'+id).classList.add('active');
+  btn.classList.add('active');
+  setTimeout(buildAll,50);
+}
+
+window.addEventListener('load',()=>{
+  buildTop10(); buildBottom10(); buildRankingFull();
+  buildEstadoBars(); buildRABars(); buildCVChart(); buildDow();
+  buildLojasFora();
+  buildTiersEstado();
+  setTimeout(buildVolEstado, 150);
+  setTimeout(buildOrgTop5, 200);
+  setTimeout(buildAll,100);
+});
+</script>
+</body>
+</html>
